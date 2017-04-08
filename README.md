@@ -1,11 +1,16 @@
 # Generic JSON Plugin for CEM 4.5.6 or higher
 
-## Purpose
+## Description
 
 Parse nested JSON Objects passed in HTTP requests and/or responses and create parameters which CEM can match/record.
 Note: HTTP Header "Content-type" must contain the keyword "json" or the plugin will ignore it.
 
 This code is meant as an example. You can use it as a template and adapt it to your needs, e.g. only promote the json fields that you need for transaction identification as plugin parameters.
+
+## License
+*Link to the license under which this extension is provided. See [Licensing](https://communities.ca.com/docs/DOC-231150910#license) on the CA APM Developer Community.*
+
+Please review the [LICENSE](LICENSE) file in this repository. Your download and use of this software constitutes your agreement to this license.
 
 ## Installation
 
@@ -22,15 +27,7 @@ Note: It is recommended in very high load environments that the URL Path filter 
 Perform a "Recording" of the page containing the JSON objects in the HTTP requests. There will be "Plugin" parameter created for each object with a value.
 Optionally: Turn on the TIM log to trace HTTP components and HTTP parameters.  You can use a URL Path filter that matches the Plugin setting to eliminate noise in the Log.
 
-
-## Version History
-
-Version | Author | Comment
---------|--------|--------
-1.0 | Corey Cohen | Initial Release
-1.1 | Corey Cohen | Created three different jars for request, response or both.
-
-## Disclaimer
+## Support
 
 This document and associated tools are made available from the
 CA/Wily Community Site as examples and provided at no charge as a
@@ -57,3 +54,13 @@ attempt to address the issue or question.  Any requests for assistance
 to CA/Wily Support regarding this tool may be routed to the original
 author if known at the time, with no guarantees of notification,
 delivery, closure, or answer by CA/Wily Support
+
+### Support URL
+https://github.com/CA-APM/cem-json-parser/issues
+
+## Version History
+
+Version | Author | Comment
+--------|--------|--------
+1.0 | Corey Cohen | Initial Release
+1.1 | Corey Cohen | Created three different jars for request, response or both.
