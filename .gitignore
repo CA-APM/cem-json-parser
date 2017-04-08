@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /target/
 .DS_Store
 *.jar
@@ -5,3 +6,17 @@
 .settings
 .classpath
 .project*
+=======
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 62f0a8e8d8ec3dd2d2fbadf28e80f62c82abd135
