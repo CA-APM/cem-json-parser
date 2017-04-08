@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ca.apm.fieldpacks.cem</groupId>
+	<artifactId>json-request-response-parser</artifactId>
+	<packaging>jar</packaging>
+	<name>Generic JSON Request/Response Parser</name>
+	<description>This implementation looks for JSON strings in requests and responses and converts each element into a CEM plugin parameter.</description>
+	<parent>
+		<groupId>ca.apm.fieldpacks</groupId>
+		<artifactId>json-parser-pom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../json-parser-pom/pom.xml</relativePath>
+	</parent>
+	<properties>
+		<wiki.page.id>718260244</wiki.page.id>
+		<build.timestamp>${maven.build.timestamp}</build.timestamp>
+		<maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
+		<!-- default is: yyyyMMdd-HHmm -->
+	</properties>
+	<build>
+		<finalName>ca.apm.swat.fieldpacks.json-request-response-parser</finalName>
+		<defaultGoal>clean package assembly:single</defaultGoal>
+	</build>
+</project>

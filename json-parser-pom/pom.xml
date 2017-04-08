@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ca.apm.fieldpacks</groupId>
+	<artifactId>json-parser-pom</artifactId>
+	<version>1.1.0</version>
+	<name>CEM JSON Parser</name>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>../json-request-parser</module>
+		<module>../json-response-parser</module>
+		<module>../json-request-response-parser</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>ca.apm.fieldpacks</groupId>
+				<artifactId>wikipublish-maven-plugin</artifactId>
+				<configuration>
+					<wikiPageId>${wiki.page.id}</wikiPageId>
+					<pmfKey>${ca.pmfkey}</pmfKey>
+					<pmfPassword>${ca.password}</pmfPassword>
+					<maximumAttachmentsPerPage>15</maximumAttachmentsPerPage>
+				</configuration>
+			</plugin>
+		</plugins>
+		<defaultGoal>clean package assembly:single</defaultGoal>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.ca.apm.cem.tim</groupId>
+			<artifactId>javapluginwrapper</artifactId>
+			<version>99.99.aquarius-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

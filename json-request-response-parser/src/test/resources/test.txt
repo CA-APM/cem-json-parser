@@ -1,0 +1,1 @@
+{"model":"XT1063","osVersion":"4.4.4","appVersion":"1.6.1","hsv":"ql4hjgi34jgbqawenbo","userId":"0","modelVersion":"19","osName":"Android","deviceId":"369970"}
